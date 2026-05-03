@@ -1,0 +1,1 @@
+// Empty JavaScript file for GitHub Pages host-guide
