@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>Documentation - Salesforce User Inspector</title> -->
-    <title>Documentation - TEST</title>
+    <title>Documentation - Salesforce User Inspector</title>
     <link rel="icon" href="icon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -118,8 +117,7 @@
     <header class="menu-bar">
         <div class="branding">
             <img src="../icons/icon.png" alt="Salesforce User Inspector Icon" class="menu-icon">
-            <!-- <span class="brand-name">Salesforce User Inspector</span> -->
-            <span class="brand-name">TEST BRAND</span>
+            <span class="brand-name">Salesforce User Inspector</span>
         </div>
         <nav class="menu-links">
             <a href="documentation.html" class="menu-link">Documentation</a>
@@ -162,30 +160,45 @@
                 <h2>Features</h2>
                 <p>Salesforce User Inspector provides a comprehensive set of tools for analyzing user permissions and access:</p>
                 <ul>
-                    <!-- <li>Inspect Permission Sets</li>
-                    <li>View Permission Set Groups</li>
-                    <li>Analyze Public Groups</li>
-                    <li>Manage Queues</li>
-                    <li>View Object and Field Permissions</li> -->
-                    <li>TEST</li>
+                    <li>Inspect Permission Set and Permission Set Group assignments</li>
+                    <li>View and manage Public Group memberships</li>
+                    <li>Manage Queue assignments and access</li>
+                    <li>Analyze object and field-level permissions along with their source</li>
                 </ul>
             </div>
             
             <div class="doc-section">
                 <h2>Getting Started</h2>
                 <h3>Installation</h3>
-                <!-- <p>Install the extension from the Chrome Web Store or Firefox Add-ons. Once installed, click the extension icon in your browser toolbar to open the inspector.</p> -->
-                <p>TEST</p>
-
+                <p>Install the extension from the Chrome Web Store. Once installed, click the extension icon in your browser toolbar to open the inspector.</p>
+                
                 <h3>Using the Extension</h3>
-                <!-- <p>After installation, navigate to any Salesforce page. Click the extension icon to inspect users, view their permissions, and analyze access levels.</p> -->
-                <p>TEST</p>
+                <p>To use this extension, you must create a Connected App in Salesforce. Please follow the steps below:</p>
+                <ul>
+                    <li>Create a Connected App with any name and contact email of your choice.</li>
+                    <li>Enable OAuth Settings.</li>
+                    <li>Set the Callback URL (as provided in the extension setup instructions).</li>
+                    <li>Select the OAuth scope: “Manage user data via APIs (api)”.</li>
+                    <li>Under security settings, disable “Require Proof Key for Code Exchange (PKCE) extension for Supported Authorization Flows.”</li>
+                    <li>Save the Connected App configuration.</li>
+                    <li>Navigate to the Consumer Key and Secret section. Complete email verification if prompted, and securely store the generated Consumer Key.</li>
+                </ul>
+                <p style="margin-top: 20px;">After installing the extension:</p>
+                <ul>
+                    <li>Open the extension and click “+ Add/Remove Configuration.”</li>
+                    <li>Provide a configuration name of your choice.</li>
+                    <li>Enter the Login URL (preferably your organization-specific Salesforce domain instead of "login.salesforce.com").</li>
+                    <li>Add the Consumer Key generated from your Connected App.</li>
+                    <li>Click Save to store the configuration.</li>
+                    <li>From the dropdown menu, select the desired organization configuration from the saved entries and click “Login with Salesforce.”</li>
+                    <li>To delete an existing configuration, select the relevant organization from the dropdown, click “+ Add/Remove Configuration,” and then choose “Delete” to remove it.</li>
+                </ul>
             </div>
             
             <div class="doc-section">
                 <h2>Support</h2>
-                <!-- <p>If you encounter any issues or have questions, please file an issue on our GitHub repository.</p> -->
-                <p>TEST</p>
+                <p>If you encounter any issues or have questions, please fill up the form using the link below.</p>
+                <p>--link--</p>
             </div>
         </div>
     </main>
