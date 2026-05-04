@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Release Notes - Salesforce User Inspector</title> -->
+    <title>Release Notes - TEST</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .release-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        
+        .release-header {
+            margin-bottom: 48px;
+        }
+        
+        .release-header h1 {
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+        
+        .release-header p {
+            color: #94a3b8;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        .release-version {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+        
+        .release-version h2 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: #00a1e0;
+        }
+        
+        .release-version .version-date {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .release-version h3 {
+            font-size: 18px;
+            margin: 20px 0 12px;
+            color: #ffffff;
+        }
+        
+        .release-version ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .release-version ul li {
+            color: #94a3b8;
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+        
+        .release-version ul li::before {
+            content: '•';
+            color: #22c55e;
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+            line-height: 1;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #94a3b8;
+            text-decoration: none;
+            margin-bottom: 24px;
+            transition: color 0.2s ease;
+        }
+        
+        .back-link:hover {
+            color: #00a1e0;
+        }
+        
+        .back-link svg {
+            margin-right: 8px;
+        }
+        
+        /* Light mode */
+        body.light-mode .release-version {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+        
+        body.light-mode .release-version h2 {
+            color: #0077b6;
+        }
+        
+        body.light-mode .release-version ul li {
+            color: #64748b;
+        }
+        
+        body.light-mode .back-link {
+            color: #64748b;
+        }
+        
+        body.light-mode .back-link:hover {
+            color: #0077b6;
+        }
+    </style>
+</head>
+<body>
+    <header class="menu-bar">
+        <div class="branding">
+            <img src="../icons/icon.png" alt="Salesforce User Inspector Icon" class="menu-icon">
+            <!-- <span class="brand-name">Salesforce User Inspector</span> -->
+            <span class="brand-name">TEST BRAND</span>
+        </div>
+        <nav class="menu-links">
+            <a href="documentation.html" class="menu-link">Documentation</a>
+            <a href="release-notes.html" class="menu-link">Release Notes</a>
+            <a href="#" class="menu-link highlight">Install Extension</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div class="release-container">
+            <a href="index.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Home
+            </a>
+            
+            <div class="release-header">
+                <h1>Release Notes</h1>
+                <p>Stay up to date with the latest features and improvements to Salesforce User Inspector.</p>
+            </div>
+            
+            <div class="release-version">
+                <h2>Version 1.0.0</h2>
+                <p class="version-date">Initial Release</p>
+                <h3>Features</h3>
+                <ul>
+                    <!-- <li>Initial release</li>
+                    <li>Permission Set inspection</li>
+                    <li>Permission Set Group viewing</li>
+                    <li>Public Group analysis</li>
+                    <li>Queue management</li>
+                    <li>Object and Field permission views</li> -->
+                    <li>Not Released</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

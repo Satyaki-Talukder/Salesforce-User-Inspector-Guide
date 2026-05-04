@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Documentation - Salesforce User Inspector</title> -->
+    <title>Documentation - TEST</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .doc-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        
+        .doc-header {
+            margin-bottom: 48px;
+        }
+        
+        .doc-header h1 {
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+        
+        .doc-header p {
+            color: #94a3b8;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        .doc-section {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+        
+        .doc-section h2 {
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: #00a1e0;
+        }
+        
+        .doc-section h3 {
+            font-size: 20px;
+            margin: 24px 0 12px;
+        }
+        
+        .doc-section p {
+            color: #94a3b8;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        
+        .doc-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .doc-section ul li {
+            color: #94a3b8;
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+        
+        .doc-section ul li::before {
+            content: '✓';
+            color: #22c55e;
+            position: absolute;
+            left: 0;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #94a3b8;
+            text-decoration: none;
+            margin-bottom: 24px;
+            transition: color 0.2s ease;
+        }
+        
+        .back-link:hover {
+            color: #00a1e0;
+        }
+        
+        .back-link svg {
+            margin-right: 8px;
+        }
+        
+        /* Light mode */
+        body.light-mode .doc-section {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+        
+        body.light-mode .doc-section h2 {
+            color: #0077b6;
+        }
+        
+        body.light-mode .doc-section p,
+        body.light-mode .doc-section ul li {
+            color: #64748b;
+        }
+        
+        body.light-mode .back-link {
+            color: #64748b;
+        }
+        
+        body.light-mode .back-link:hover {
+            color: #0077b6;
+        }
+    </style>
+</head>
+<body>
+    <header class="menu-bar">
+        <div class="branding">
+            <img src="../icons/icon.png" alt="Salesforce User Inspector Icon" class="menu-icon">
+            <!-- <span class="brand-name">Salesforce User Inspector</span> -->
+            <span class="brand-name">TEST BRAND</span>
+        </div>
+        <nav class="menu-links">
+            <a href="documentation.html" class="menu-link">Documentation</a>
+            <a href="release-notes.html" class="menu-link">Release Notes</a>
+            <a href="#" class="menu-link highlight">Install Extension</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div class="doc-container">
+            <a href="index.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Home
+            </a>
+            
+            <div class="doc-header">
+                <h1>Documentation</h1>
+                <p>Welcome to the Salesforce User Inspector documentation. This extension helps you analyze and manage Salesforce users with ease.</p>
+            </div>
+            
+            <div class="doc-section">
+                <h2>Features</h2>
+                <p>Salesforce User Inspector provides a comprehensive set of tools for analyzing user permissions and access:</p>
+                <ul>
+                    <!-- <li>Inspect Permission Sets</li>
+                    <li>View Permission Set Groups</li>
+                    <li>Analyze Public Groups</li>
+                    <li>Manage Queues</li>
+                    <li>View Object and Field Permissions</li> -->
+                    <li>TEST</li>
+                </ul>
+            </div>
+            
+            <div class="doc-section">
+                <h2>Getting Started</h2>
+                <h3>Installation</h3>
+                <!-- <p>Install the extension from the Chrome Web Store or Firefox Add-ons. Once installed, click the extension icon in your browser toolbar to open the inspector.</p> -->
+                <p>TEST</p>
+
+                <h3>Using the Extension</h3>
+                <!-- <p>After installation, navigate to any Salesforce page. Click the extension icon to inspect users, view their permissions, and analyze access levels.</p> -->
+                <p>TEST</p>
+            </div>
+            
+            <div class="doc-section">
+                <h2>Support</h2>
+                <!-- <p>If you encounter any issues or have questions, please file an issue on our GitHub repository.</p> -->
+                <p>TEST</p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -3,12 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Host Page</title>
+    <!-- <title>Home - Salesforce User Inspector</title> -->
+    <title>Home - TEST</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Host Page</h1>
-    <p>This is a basic GitHub Pages template.</p>
+    <header class="menu-bar">
+        <div class="branding">
+            <img src="../icons/icon.png" alt="Salesforce User Inspector Icon" class="menu-icon">
+            <!-- <span class="brand-name">Salesforce User Inspector</span> -->
+            <span class="brand-name">TEST BRAND</span>
+        </div>
+        <nav class="menu-links">
+            <a href="documentation.html" class="menu-link">Documentation</a>
+            <a href="release-notes.html" class="menu-link">Release Notes</a>
+            <!-- <a href="#" class="menu-link highlight">Install Extension</a> -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="../icons/icon.png" alt="Salesforce User Inspector Icon" class="hero-logo">
+                <h1 class="hero-header"><span class="gradient-text">Inspect</span> and <span class="gradient-text">Manage</span> Salesforce Users with <span class="gradient-text">Clarity and Speed</span></h1>
+                <p class="hero-subheader">Quickly analyze permissions, roles, and access levels in one streamlined view — so you can make faster, more informed decisions without navigating complex setups.</p>
+                <div class="hero-buttons">
+                    <!-- <a href="#" class="btn btn-primary">Install Extension</a> -->
+                    <a href="documentation.html" class="btn btn-secondary">View Documentation</a>
+                </div>
+            </div>
+            <div class="features-list">
+                <h3 class="features-header">What you can inspect?</h3>
+                <ul class="features-items">
+                    <li class="feature-item"><span class="bullet blue"></span>Permission Sets</li>
+                    <li class="feature-item"><span class="bullet purple"></span>Permission Set Groups</li>
+                    <li class="feature-item"><span class="bullet green"></span>Public Groups</li>
+                    <li class="feature-item"><span class="bullet orange"></span>Queues</li>
+                    <li class="feature-item"><span class="bullet pink"></span>Object and Field Permissions</li>
+                </ul>
+            </div>
+        </section>
+        
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
