@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  transition: background-color 0.3s ease;
 }
 
 /* Page Load Animations */
@@ -93,6 +94,7 @@ body {
   background-color: #0f172a;
   padding: 12px 24px;
   border-bottom: 1px solid #475569;
+  transition: background-color 0.3s ease;
 }
 
 .branding {
@@ -498,7 +500,7 @@ body.light-mode .features-header {
   margin: 24px 0 12px;
 }
 
-.tab-panel p {
+.tab-panel p, .doc-section a {
   color: #94a3b8;
   line-height: 1.6;
   margin-bottom: 16px;
