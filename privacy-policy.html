@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Release Notes - Salesforce User Inspector</title>
+    <title>Privacy Policy - Salesforce User Inspector</title>
     <link rel="icon" href="icon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <style>
-        .release-container {
+        .policy-container {
             max-width: 900px;
             margin: 0 auto;
             padding: 48px 24px;
         }
         
-        .release-header {
+        .policy-header {
             margin-bottom: 48px;
         }
         
-        .release-header h1 {
+        .policy-header h1 {
             font-size: 36px;
             margin-bottom: 16px;
         }
         
-        .release-header p {
+        .policy-header p {
             color: #94a3b8;
             font-size: 18px;
             line-height: 1.6;
         }
         
-        .release-version {
+        .policy-section {
             background-color: rgba(255, 255, 255, 0.05);
             border-radius: 12px;
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -36,43 +36,35 @@
             margin-bottom: 24px;
         }
         
-        .release-version h2 {
+        .policy-section h2 {
             font-size: 24px;
-            margin-bottom: 8px;
+            margin-bottom: 16px;
             color: #00a1e0;
         }
         
-        .release-version .version-date {
-            color: #64748b;
-            font-size: 14px;
+        .policy-section p {
+            color: #94a3b8;
+            line-height: 1.6;
             margin-bottom: 16px;
         }
         
-        .release-version h3 {
-            font-size: 18px;
-            margin: 20px 0 12px;
-            color: #ffffff;
-        }
-        
-        .release-version ul {
+        .policy-section ul {
             list-style: none;
             padding: 0;
         }
         
-        .release-version ul li {
+        .policy-section ul li {
             color: #94a3b8;
             padding: 8px 0;
             padding-left: 24px;
             position: relative;
         }
         
-        .release-version ul li::before {
-            content: '•';
+        .policy-section ul li::before {
+            content: '✓';
             color: #22c55e;
             position: absolute;
             left: 0;
-            font-size: 20px;
-            line-height: 1;
         }
         
         .back-link {
@@ -93,16 +85,17 @@
         }
         
         /* Light mode */
-        body.light-mode .release-version {
+        body.light-mode .policy-section {
             border: 1px solid rgba(0, 0, 0, 0.1);
             background-color: rgba(0, 0, 0, 0.02);
         }
         
-        body.light-mode .release-version h2 {
+        body.light-mode .policy-section h2 {
             color: #0077b6;
         }
         
-        body.light-mode .release-version ul li {
+        body.light-mode .policy-section p,
+        body.light-mode .policy-section ul li {
             color: #64748b;
         }
         
@@ -145,7 +138,7 @@
         </nav>
     </header>
     <main>
-        <div class="release-container">
+        <div class="policy-container">
             <a href="index.html" class="back-link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="19" y1="12" x2="5" y2="12"></line>
@@ -154,22 +147,56 @@
                 Back to Home
             </a>
             
-            <div class="release-header">
-                <h1>Release Notes</h1>
-                <p>Stay up to date with the latest features and improvements to Salesforce User Inspector.</p>
+            <div class="policy-header">
+                <h1>Privacy Policy</h1>
+                <p>How data is processed for Salesforce User Inspector.</p>
             </div>
             
-            <div class="release-version">
-                <h2>Version 1.0.0</h2>
-                <p class="version-date">Initial Release</p>
-                <h3>Features</h3>
+            <div class="policy-section">
+                <h2>Data Collection</h2>
+                <p>Salesforce User Inspector accesses your Salesforce organization data solely to provide the functionality described in the documentation. The extension requires OAuth authentication to communicate with Salesforce APIs on your behalf.</p>
                 <ul>
-                    <li>Initial release</li>
-                    <li>Manage Permission Sets and Permission Set Groups assignments.</li>
-                    <li>Manage Public Group assignments</li>
-                    <li>Manage Queue assignments</li>
-                    <li>View Object and Field permissions with their source</li>
+                    <li>User profile information (name, email, username)</li>
+                    <li>Permission Set and Permission Set Group assignments</li>
+                    <li>Public Group memberships</li>
+                    <li>Queue assignments</li>
+                    <li>Object and field-level permissions</li>
                 </ul>
+            </div>
+            
+            <div class="policy-section">
+                <h2>Data Usage</h2>
+                <p>All data accessed through this extension is processed locally within your browser. We do not transmit any of your Salesforce data to external servers beyond what's necessary for authentication with Salesforce.</p>
+                <ul>
+                    <li>Data is used solely to display user permission information</li>
+                    <li>No data is stored on external servers</li>
+                    <li>No analytics or tracking of your Salesforce data</li>
+                </ul>
+            </div>
+            
+            <div class="policy-section">
+                <h2>Data Storage</h2>
+                <p>This extension does not persistently store any of your Salesforce data. All information is retrieved in real-time when you use the extension and is cleared when you close the browser or log out.</p>
+                <ul>
+                    <li>OAuth tokens are stored securely in your browser's extension storage</li>
+                    <li>Configuration data (organization URLs) is stored locally only</li>
+                    <li>You can clear all stored data by removing the extension</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h2>Cookies</h2>
+                <p>This extension does not use cookies for tracking or data storage. OAuth authentication tokens are stored in your browser's secure extension storage, which is separate from website cookies.</p>
+                <ul>
+                    <li>No third-party cookies are used</li>
+                    <li>No tracking cookies or analytics</li>
+                    <li>Session tokens are stored in browser extension storage only</li>
+                </ul>
+            </div>
+            
+            <div class="policy-section">
+                <h2>Contact</h2>
+                <p>If you have any questions or concerns about this privacy policy, please contact us through the support form.</p>
             </div>
         </div>
     </main>
