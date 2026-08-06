@@ -161,40 +161,27 @@
                 <h2>Features</h2>
                 <p>Salesforce User Inspector provides a comprehensive set of tools for analyzing user permissions and access:</p>
                 <ul>
-                    <li>Inspect Permission Set and Permission Set Group assignments</li>
+                    <li>Inspect Permission Set assignments</li>
                     <li>View and manage Public Group memberships</li>
                     <li>Manage Queue assignments and access</li>
                     <li>Analyze object and field-level permissions along with their source</li>
                     <li>Analyze a user's record-level access, ownership, OWD of the object, and how the record is shared.</li>
-                    <li>Compare Permission Sets side-by-side to identify differences</li>
+                    <li>Compare Permission Sets access differences</li>
                 </ul>
             </div>
             
             <div class="doc-section">
                 <h2>Getting Started</h2>
                 <h3>Installation</h3>
-                <p>Install the extension from the Chrome Web Store. Once installed, click the extension icon in your browser toolbar to open the inspector.</p>
+                <p>Install the extension from the Chrome Web Store. No Connected App or OAuth setup is required.</p>
                 
                 <h3>Using the Extension</h3>
-                <p>To use this extension, you must create a Connected App in Salesforce. Please follow the steps below:</p>
+                <p>The extension uses your existing logged-in Salesforce session to connect.</p>
                 <ul>
-                    <li>Create a Connected App with any name and contact email of your choice.</li>
-                    <li>Enable OAuth Settings.</li>
-                    <li>Set the Callback URL in the format: 'https://-extension_ID-.chromiumapp.org/auth/callback'.</li>
-                    <li>Select the OAuth scope: “Manage user data via APIs (api)”.</li>
-                    <li>Under security settings, disable “Require Proof Key for Code Exchange (PKCE) extension for Supported Authorization Flows.”</li>
-                    <li>Save the Connected App configuration.</li>
-                    <li>Navigate to the Consumer Key and Secret section. Complete email verification if prompted, and securely store the generated Consumer Key.</li>
-                </ul>
-                <p style="margin-top: 20px;">After installing the extension:</p>
-                <ul>
-                    <li>Open the extension and click “+ Add/Remove Configuration.”</li>
-                    <li>Provide a configuration name of your choice.</li>
-                    <li>Enter the Login URL (preferably your organization-specific Salesforce domain instead of "login.salesforce.com").</li>
-                    <li>Add the Consumer Key generated from your Connected App.</li>
-                    <li>Click Save to store the configuration.</li>
-                    <li>From the dropdown menu, select the desired organization configuration from the saved entries and click “Login with Salesforce.”</li>
-                    <li>To delete an existing configuration, select the relevant organization from the dropdown, click “+ Add/Remove Configuration,” and then choose “Delete” to remove it.</li>
+                    <li>Uses existing logged-in Salesforce session to connect</li>
+                    <li>Once installed, the extension icon will appear on the active Salesforce org tab</li>
+                    <li>If not, refresh the page to see it</li>
+                    <li>Click on the icon for the extension to open in a new tab</li>
                 </ul>
             </div>
             
