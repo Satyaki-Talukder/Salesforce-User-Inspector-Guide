@@ -154,13 +154,15 @@
             
             <div class="policy-section">
                 <h2>Data Collection</h2>
-                <p>Salesforce User Inspector accesses your Salesforce organization data solely to provide the functionality described in the documentation. The extension requires OAuth authentication to communicate with Salesforce APIs on your behalf.</p>
+                <p>Salesforce User Inspector accesses your Salesforce organization data solely to provide the functionality described in the documentation. The extension uses your existing logged-in Salesforce session to communicate with Salesforce APIs on your behalf.</p>
                 <ul>
                     <li>User profile information (name, email, username)</li>
-                    <li>Permission Set assignments</li>
+                    <li>Permission Set and Permission Set Group assignments</li>
                     <li>Public Group memberships</li>
                     <li>Queue assignments</li>
+                    <li>Apps, Flows access and Tab Visibility</li>
                     <li>Object and field-level permissions</li>
+                    <li>Record-level access and sharing information</li>
                 </ul>
             </div>
             
@@ -178,9 +180,18 @@
                 <h2>Data Storage</h2>
                 <p>This extension does not persistently store any of your Salesforce data. All information is retrieved in real-time when you use the extension and is cleared when you close the browser or log out.</p>
                 <ul>
-                    <li>OAuth tokens are stored securely in your browser's extension storage</li>
+                    <li>No OAuth tokens are stored; the extension relies on your existing Salesforce session</li>
                     <li>Configuration data (organization URLs) is stored locally only</li>
                     <li>You can clear all stored data by removing the extension</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h2>Session</h2>
+                <p>The extension relies on your existing logged-in Salesforce browser session to authenticate API requests. It does not prompt for credentials or store passwords.</p>
+                <ul>
+                    <li>No login credentials are collected or stored</li>
+                    <li>Session data is managed entirely by your browser</li>
                 </ul>
             </div>
 
