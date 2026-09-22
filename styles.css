@@ -71,13 +71,6 @@ body {
 }
 
 /* Animation delays for page elements */
-.menu-bar .branding {
-  animation-delay: 0.05s;
-}
-
-.menu-bar .menu-links {
-  animation-delay: 0.05s;
-}
 
 .feature-item:nth-child(1),
 .feature-item:nth-child(2),
@@ -500,7 +493,7 @@ body.light-mode .features-header {
   margin: 24px 0 12px;
 }
 
-.tab-panel p, .doc-section a {
+.tab-panel p, .doc-section a, .policy-section a {
   color: #94a3b8;
   line-height: 1.6;
   margin-bottom: 16px;
