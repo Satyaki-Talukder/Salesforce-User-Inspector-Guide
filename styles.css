@@ -167,7 +167,7 @@ body {
 }
 
 .menu-link:not(.highlight) {
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: flex;
   align-items: center;
   height: 100%;
@@ -185,7 +185,9 @@ body {
 }
 
 .menu-link.highlight {
-  background-color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #ffffff;
   font-size: var(--text-size-normal);
   font-weight: var(--text-weight-bold);
   display: inline-flex;
@@ -197,6 +199,8 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  line-height: 0;
 }
 
 .menu-link-icon svg {
@@ -204,7 +208,7 @@ body {
 }
 
 .menu-link.highlight:hover {
-  background-color: rgb(1, 65, 176);
+  border-color: #ffffff;
   color: #ffffff;
 }
 
@@ -243,22 +247,36 @@ main {
 }
 
 .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
   max-width: 900px;
 }
 
 .hero-logo {
   width: 120px;
   height: 120px;
-  margin-bottom: 24px;
+}
+
+.hero-brand {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  background: linear-gradient(90deg, #00a1e0, #d761c9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-header {
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: var(--text-weight);
   color: var(--text-color-dark);
-  margin-bottom: 16px;
+  margin: 12px 0;
   /* max-width: 800px; */
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 .gradient-text {
@@ -303,6 +321,8 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  line-height: 0;
 }
 
 .btn-icon svg {
@@ -363,6 +383,7 @@ main {
   font-weight: var(--text-weight-bold);
   color: var(--text-color-dark);
   text-align: center;
+  text-transform: capitalize;
   text-decoration: none;
   cursor: pointer;
   transition: color 0.2s ease;
@@ -550,8 +571,7 @@ main {
 .doc-header,
 .policy-header,
 .release-header {
-  margin: 0 auto 48px;
-  max-width: 900px;
+  margin-bottom: 48px;
 }
 
 .doc-header h1,
@@ -761,6 +781,23 @@ main {
 
 /* Responsive */
 @media (max-width: 768px) {
+  /* Hero */
+  .hero {
+    padding: 32px 24px;
+  }
+
+  .hero-brand {
+    font-size: 32px;
+  }
+
+  .hero-header {
+    font-size: 24px;
+  }
+
+  .hero-subheader {
+    font-size: var(--text-size-subheader-1);
+  }
+
   /* Sub-page layouts */
   .doc-layout,
   .policy-layout,

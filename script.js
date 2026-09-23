@@ -4,8 +4,9 @@ const pages = {
         <section class="hero">
             <div class="hero-content">
                 <img src="icon.png" alt="Salesforce User Inspector Icon" class="hero-logo">
-                <h1 class="hero-header"><span class="gradient-text">Inspect</span> and <span class="gradient-text">Manage</span> Salesforce Users with <span class="gradient-text">Clarity and Speed</span></h1>
-                <p class="hero-subheader">Quickly analyze permissions, roles, and access levels in one streamlined view — so you can make faster, more informed decisions without navigating complex setups.</p>
+                <h1 class="hero-brand gradient-text">Salesforce User Inspector</h1>
+                <p class="hero-header"><span class="gradient-text">Inspect</span> and <span class="gradient-text">Manage</span> Salesforce Users with <span class="gradient-text">Clarity and Speed</span></p>
+                <p class="hero-subheader">Your ultimate Salesforce user toolkit - Inspect permissions, spot Permission Set differences, bulk-onboard users, and more without breaking a sweat.</p>
                 <div class="hero-buttons">
                     <a href="https://chromewebstore.google.com/detail/salesforce-user-inspector/pnhnlclfhfokkdalcmchdikkakipjggl" target="_blank" class="btn btn-primary"><span class="btn-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="#ea4335" d="M12 12 2.474 6.5A11 11 0 0 1 21.526 6.5Z"/><path fill="#34a853" d="M12 12 21.526 6.5A11 11 0 0 1 12 23Z"/><path fill="#fbbc05" d="M12 12 12 23A11 11 0 0 1 2.474 6.5Z"/><circle cx="12" cy="12" r="6.2" fill="#ffffff"/><circle cx="12" cy="12" r="4.7" fill="#4285f4"/></svg></span>Install Extension</a>
                     <a href="#/documentation" class="btn btn-secondary">View Documentation</a>
@@ -13,7 +14,7 @@ const pages = {
             </div>
         </section>
         <section class="features-section" id="features-section">
-            <a href="#features-section" class="features-header">What you can do?</a>
+            <a href="#features-section" class="features-header">How It Simplifies Your Workflow</a>
             <div class="features-list" id="features-list">
                 <ul class="features-items">
                     <li class="feature-item blue">
