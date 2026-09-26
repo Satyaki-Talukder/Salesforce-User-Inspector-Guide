@@ -3,12 +3,12 @@
 // Generate the documentation page HTML
 function getDocumentationPage() {
     return `
-        <div class="doc-container">
-            <div class="doc-header">
-                <h1>Documentation</h1>
-                <p>Welcome to the Salesforce User Inspector documentation. This extension helps you analyze and manage Salesforce users with ease.</p>
-            </div>
+        <div class="doc-header">
+            <h1>Documentation</h1>
+            <p>Welcome to the Salesforce User Inspector documentation. This extension helps you analyze and manage Salesforce users with ease.</p>
+        </div>
 
+        <div class="doc-container">
             <div class="doc-layout">
                 <div class="doc-content">
                     <div class="doc-section">

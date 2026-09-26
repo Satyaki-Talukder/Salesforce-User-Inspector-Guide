@@ -3,12 +3,12 @@
 // Generate the privacy policy page HTML
 function getPrivacyPolicyPage() {
     return `
-        <div class="policy-container">
-            <div class="policy-header">
-                <h1>Privacy Policy</h1>
-                <p>How data is processed for Salesforce User Inspector.</p>
-            </div>
+        <div class="policy-header">
+            <h1>Privacy Policy</h1>
+            <p>How data is processed for Salesforce User Inspector.</p>
+        </div>
 
+        <div class="policy-container">
             <div class="policy-layout">
                 <div class="policy-content">
                     <div class="policy-section">

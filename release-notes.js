@@ -76,12 +76,12 @@ const releaseNotes = [
 // Generate the release notes page HTML with sidebar and content boxes
 function getReleaseNotesPage() {
     return `
-        <div class="release-container">
-            <div class="release-header">
-                <h1>Release Notes</h1>
-                <p>Stay up to date with the latest features and improvements to Salesforce User Inspector.</p>
-            </div>
+        <div class="release-header">
+            <h1>Release Notes</h1>
+            <p>Stay up to date with the latest features and improvements to Salesforce User Inspector.</p>
+        </div>
 
+        <div class="release-container">
             <div class="release-layout">
                 <aside class="release-sidebar">
                     <h3 class="release-sidebar-title">Versions</h3>
@@ -98,8 +98,12 @@ function getReleaseNotesPage() {
                 <div class="release-content">
                     ${releaseNotes.map(release => `
                         <div class="release-version" id="release-${release.version}">
-                            <h2>Version ${release.version}${release.tags ? release.tags.map(tag => ` <span class="release-tag">${tag}</span>`).join('') : ''}</h2>
-                            <p class="version-date">${release.date}</p>
+                            <h2>
+                                Version ${release.version}
+                                <span class="version-separator">-</span>
+                                <span class="version-date">${release.date}</span>
+                                ${release.tags ? release.tags.map(tag => `<span class="release-tag">${tag}</span>`).join('') : ''}
+                            </h2>
                             <h3>Features & Bugs</h3>
                             <ul>
                                 ${release.features.map(feature => `<li>${feature}</li>`).join('')}
