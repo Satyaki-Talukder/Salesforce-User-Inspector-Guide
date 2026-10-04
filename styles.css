@@ -185,8 +185,8 @@ body {
 }
 
 .menu-link.highlight {
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: var(--primary-color);
+  border: none;
   color: #ffffff;
   font-size: var(--text-size-normal);
   font-weight: var(--text-weight-bold);
@@ -208,7 +208,7 @@ body {
 }
 
 .menu-link.highlight:hover {
-  border-color: #ffffff;
+  background-color: rgb(1, 65, 176);
   color: #ffffff;
 }
 
