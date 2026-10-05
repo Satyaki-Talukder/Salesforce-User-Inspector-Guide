@@ -3,9 +3,20 @@
 // Version to release notes mapping (descending order)
 const releaseNotes = [
     {
+        version: '2.3.0',
+        date: '05th October, 2026',
+        tags: ['Latest'],
+        features: [
+            'Tried establishing a distinct identity for Salesforce User Inspector while retaining some SLDS 2 design cues for visual continuity with the Salesforce org.',
+            'Refreshed the UI: Introduced a new font, reduced spacings for more content viewing, and improved page responsiveness.',
+            'Replaced standalone component designs with reusable components for a more consistent UI, thus smaller file sizes.',
+            'Added header descriptions to most Inspect User menu items.',
+            'Added a quick summary of access assignments - Permission Sets, Permission Set Groups, Public Groups, and Queues - in the Details sub-menu.',
+        ]
+    },
+    {
         version: '2.2.1',
         date: '22nd September, 2026',
-        tags: ['Latest'],
         features: [
             'Added a new menu - Create Users.',
             'Add users manually or paste from Excel/CSV.',
