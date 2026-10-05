@@ -5,7 +5,7 @@ function getDocumentationPage() {
     return `
         <div class="doc-header">
             <h1>Documentation</h1>
-            <p>Welcome to the Salesforce User Inspector documentation. This extension helps you analyze and manage Salesforce users with ease.</p>
+            <p>Everything you need to install, set up, and get the most out of Salesforce User Inspector.</p>
         </div>
 
         <div class="doc-container">

@@ -5,7 +5,7 @@ function getPrivacyPolicyPage() {
     return `
         <div class="policy-header">
             <h1>Privacy Policy</h1>
-            <p>How data is processed for Salesforce User Inspector.</p>
+            <p>Your privacy matters — here's how Salesforce User Inspector handles your data.</p>
         </div>
 
         <div class="policy-container">

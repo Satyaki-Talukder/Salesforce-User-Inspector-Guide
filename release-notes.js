@@ -78,7 +78,7 @@ function getReleaseNotesPage() {
     return `
         <div class="release-header">
             <h1>Release Notes</h1>
-            <p>Stay up to date with the latest features and improvements to Salesforce User Inspector.</p>
+            <p>See what's new — features, fixes, and improvements across every version.</p>
         </div>
 
         <div class="release-container">
