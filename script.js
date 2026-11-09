@@ -45,6 +45,10 @@ const pages = {
                         <h4 class="feature-item-header">Create Users</h4>
                         <p class="feature-item-text">Create users with mapped assignments in one go</p>
                     </li>
+                    <li class="feature-item blue">
+                        <h4 class="feature-item-header">Peer Sync</h4>
+                        <p class="feature-item-text">Sync accesses from a source user to target user(s)</p>
+                    </li>
                 </ul>
             </div>
         </section>
