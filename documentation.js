@@ -23,6 +23,7 @@ function getDocumentationPage() {
                             <li>Analyze a user's record-level access, ownership, OWD of the object, and how the record is shared.</li>
                             <li>Compare Permission Sets access differences, including Assigned Apps and Flows</li>
                             <li>Create users manually or by pasting details from Excel/CSV, with mapped assignments applied automatically, in bulk using composite API.</li>
+                            <li>Sync accesses from a source user to target user(s) using Peer Sync.</li>
                         </ul>
                     </div>
                     

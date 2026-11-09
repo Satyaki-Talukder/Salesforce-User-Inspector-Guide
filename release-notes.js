@@ -3,9 +3,21 @@
 // Version to release notes mapping (descending order)
 const releaseNotes = [
     {
+        version: '2.4.0',
+        date: '2nd November, 2026',
+        tags: ['Latest'],
+        features: [
+            'Introduced Peer Sync as a new main menu.',
+            'Select a source user and target user(s), then choose accesses to sync - Role, Profile, Permission Sets, Groups, etc.',
+            'User fields are also synced as chosen.',
+            'Optionally remove target user assignments not found in the source user.',
+            'Export the sync report to Excel once processing is done.',
+            'Updated Salesforce API version to v67.0.'
+        ]
+    },
+    {
         version: '2.3.0',
         date: '05th October, 2026',
-        tags: ['Latest'],
         features: [
             'Tried establishing a distinct identity for Salesforce User Inspector while retaining some SLDS 2 design cues for visual continuity with the Salesforce org.',
             'Refreshed the UI: Introduced a new font, reduced spacings for more content viewing, and improved page responsiveness.',
